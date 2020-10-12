@@ -1,0 +1,28 @@
+<mat-card class="user-card" *ngIf="user">
+  <mat-card-header>
+    <div mat-card-avatar class="user-card-header-image"></div>
+    <mat-card-title>{{ user.name }} {{ user.surname }}</mat-card-title>
+    <mat-card-subtitle>{{ user.userType.description }}</mat-card-subtitle>
+  </mat-card-header>
+
+  <mat-card-content>
+    <p><mat-label>Title: </mat-label>{{ user.userTitle.description }}</p>
+    <p><mat-label>Name: </mat-label>{{ user.name }}</p>
+    <p><mat-label>Surname: </mat-label>{{ user.surname }}</p>
+    <p>
+      <mat-label>Date of Birth: </mat-label
+      >{{ user.birthDate | date: "dd/MM/yyyy" }}
+    </p>
+    <p><mat-label>Type: </mat-label>{{ user.userType.description }}</p>
+    <p><mat-label>E-mail: </mat-label>{{ user.emailAddress }}</p>
+    <p><mat-label>Is Active: </mat-label>{{ user.isActive }}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="primary" (click)="onBack()">
+      <mat-icon>keyboard_backspace</mat-icon> BACK
+    </button>
+    <button mat-raised-button color="primary" routerLink="/users/{{ user.id }}/edit">
+      <mat-icon>edit</mat-icon>
+    </button>
+  </mat-card-actions>
+</mat-card>

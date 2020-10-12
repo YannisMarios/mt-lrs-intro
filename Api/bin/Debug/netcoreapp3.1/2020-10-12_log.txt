@@ -1,0 +1,194 @@
+2020-10-12 11:44:55.4519 ERROR Value cannot be null. (Parameter 'userId')
+2020-10-12 11:57:50.1692 ERROR userId
+2020-10-12 13:12:23.2577 ERROR The LINQ expression 'DbSet<User>
+    .Where(u => u.IsActive == (Nullable<bool>)True)
+    .Where(u => string.Format(
+        format: "{0} {1}", 
+        arg0: u.Name.ToLower(), 
+        arg1: u.Surname.ToLower()).Contains(__searchParams_SearchString_0) || u.Surname.ToLower().Contains(__searchParams_SearchString_0))' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+2020-10-12 13:12:23.2578 ERROR The LINQ expression 'DbSet<User>
+    .Where(u => u.IsActive == (Nullable<bool>)True)
+    .Where(u => string.Format(
+        format: "{0} {1}", 
+        arg0: u.Name.ToLower(), 
+        arg1: u.Surname.ToLower()).Contains(__searchParams_SearchString_0) || u.Surname.ToLower().Contains(__searchParams_SearchString_0))' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+2020-10-12 13:12:23.5944 ERROR The LINQ expression 'DbSet<User>
+    .Where(u => u.IsActive == (Nullable<bool>)True)
+    .Where(u => string.Format(
+        format: "{0} {1}", 
+        arg0: u.Name.ToLower(), 
+        arg1: u.Surname.ToLower()).Contains(__searchParams_SearchString_0) || u.Surname.ToLower().Contains(__searchParams_SearchString_0))' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+2020-10-12 13:12:23.9034 ERROR The LINQ expression 'DbSet<User>
+    .Where(u => u.IsActive == (Nullable<bool>)True)
+    .Where(u => string.Format(
+        format: "{0} {1}", 
+        arg0: u.Name.ToLower(), 
+        arg1: u.Surname.ToLower()).Contains(__searchParams_SearchString_0) || u.Surname.ToLower().Contains(__searchParams_SearchString_0))' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+2020-10-12 13:12:24.1295 ERROR The LINQ expression 'DbSet<User>
+    .Where(u => u.IsActive == (Nullable<bool>)True)
+    .Where(u => string.Format(
+        format: "{0} {1}", 
+        arg0: u.Name.ToLower(), 
+        arg1: u.Surname.ToLower()).Contains(__searchParams_SearchString_0) || u.Surname.ToLower().Contains(__searchParams_SearchString_0))' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+2020-10-12 13:12:59.3774 ERROR The LINQ expression 'DbSet<User>
+    .Where(u => u.IsActive == (Nullable<bool>)True)
+    .Where(u => string.Format(
+        format: "{0} {1}", 
+        arg0: u.Name.ToLower(), 
+        arg1: u.Surname.ToLower()).Contains(__searchParams_SearchString_0) || u.Surname.ToLower().Contains(__searchParams_SearchString_0))' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+2020-10-12 13:12:59.5472 ERROR The LINQ expression 'DbSet<User>
+    .Where(u => u.IsActive == (Nullable<bool>)True)
+    .Where(u => string.Format(
+        format: "{0} {1}", 
+        arg0: u.Name.ToLower(), 
+        arg1: u.Surname.ToLower()).Contains(__searchParams_SearchString_0) || u.Surname.ToLower().Contains(__searchParams_SearchString_0))' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+2020-10-12 13:12:59.7155 ERROR The LINQ expression 'DbSet<User>
+    .Where(u => u.IsActive == (Nullable<bool>)True)
+    .Where(u => string.Format(
+        format: "{0} {1}", 
+        arg0: u.Name.ToLower(), 
+        arg1: u.Surname.ToLower()).Contains(__searchParams_SearchString_0) || u.Surname.ToLower().Contains(__searchParams_SearchString_0))' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+2020-10-12 13:12:59.9064 ERROR The LINQ expression 'DbSet<User>
+    .Where(u => u.IsActive == (Nullable<bool>)True)
+    .Where(u => string.Format(
+        format: "{0} {1}", 
+        arg0: u.Name.ToLower(), 
+        arg1: u.Surname.ToLower()).Contains(__searchParams_SearchString_0) || u.Surname.ToLower().Contains(__searchParams_SearchString_0))' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+2020-10-12 13:13:00.1943 ERROR The LINQ expression 'DbSet<User>
+    .Where(u => u.IsActive == (Nullable<bool>)True)
+    .Where(u => string.Format(
+        format: "{0} {1}", 
+        arg0: u.Name.ToLower(), 
+        arg1: u.Surname.ToLower()).Contains(__searchParams_SearchString_0) || u.Surname.ToLower().Contains(__searchParams_SearchString_0))' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+2020-10-12 13:19:02.5041 ERROR The LINQ expression 'DbSet<User>
+    .Where(u => u.IsActive == (Nullable<bool>)True)
+    .Where(u => string.Format(
+        format: "{0} {1}", 
+        arg0: u.Name.ToLower(), 
+        arg1: u.Surname.ToLower()).Contains(__searchParams_SearchString_0))' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+2020-10-12 13:19:02.5041 ERROR The LINQ expression 'DbSet<User>
+    .Where(u => u.IsActive == (Nullable<bool>)True)
+    .Where(u => string.Format(
+        format: "{0} {1}", 
+        arg0: u.Name.ToLower(), 
+        arg1: u.Surname.ToLower()).Contains(__searchParams_SearchString_0))' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+2020-10-12 13:19:02.6343 ERROR The LINQ expression 'DbSet<User>
+    .Where(u => u.IsActive == (Nullable<bool>)True)
+    .Where(u => string.Format(
+        format: "{0} {1}", 
+        arg0: u.Name.ToLower(), 
+        arg1: u.Surname.ToLower()).Contains(__searchParams_SearchString_0))' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+2020-10-12 13:19:02.7977 ERROR The LINQ expression 'DbSet<User>
+    .Where(u => u.IsActive == (Nullable<bool>)True)
+    .Where(u => string.Format(
+        format: "{0} {1}", 
+        arg0: u.Name.ToLower(), 
+        arg1: u.Surname.ToLower()).Contains(__searchParams_SearchString_0))' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+2020-10-12 13:19:03.0749 ERROR The LINQ expression 'DbSet<User>
+    .Where(u => u.IsActive == (Nullable<bool>)True)
+    .Where(u => string.Format(
+        format: "{0} {1}", 
+        arg0: u.Name.ToLower(), 
+        arg1: u.Surname.ToLower()).Contains(__searchParams_SearchString_0))' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+2020-10-12 13:19:05.5673 ERROR The LINQ expression 'DbSet<User>
+    .Where(u => u.IsActive == (Nullable<bool>)True)
+    .Where(u => string.Format(
+        format: "{0} {1}", 
+        arg0: u.Name.ToLower(), 
+        arg1: u.Surname.ToLower()).Contains(__searchParams_SearchString_0))' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+2020-10-12 13:19:05.8885 ERROR The LINQ expression 'DbSet<User>
+    .Where(u => u.IsActive == (Nullable<bool>)True)
+    .Where(u => string.Format(
+        format: "{0} {1}", 
+        arg0: u.Name.ToLower(), 
+        arg1: u.Surname.ToLower()).Contains(__searchParams_SearchString_0))' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+2020-10-12 13:19:06.1752 ERROR The LINQ expression 'DbSet<User>
+    .Where(u => u.IsActive == (Nullable<bool>)True)
+    .Where(u => string.Format(
+        format: "{0} {1}", 
+        arg0: u.Name.ToLower(), 
+        arg1: u.Surname.ToLower()).Contains(__searchParams_SearchString_0))' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+2020-10-12 13:19:06.9556 ERROR The LINQ expression 'DbSet<User>
+    .Where(u => u.IsActive == (Nullable<bool>)True)
+    .Where(u => string.Format(
+        format: "{0} {1}", 
+        arg0: u.Name.ToLower(), 
+        arg1: u.Surname.ToLower()).Contains(__searchParams_SearchString_0))' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+2020-10-12 13:19:07.0720 ERROR The LINQ expression 'DbSet<User>
+    .Where(u => u.IsActive == (Nullable<bool>)True)
+    .Where(u => string.Format(
+        format: "{0} {1}", 
+        arg0: u.Name.ToLower(), 
+        arg1: u.Surname.ToLower()).Contains(__searchParams_SearchString_0))' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+2020-10-12 13:19:07.3649 ERROR The LINQ expression 'DbSet<User>
+    .Where(u => u.IsActive == (Nullable<bool>)True)
+    .Where(u => string.Format(
+        format: "{0} {1}", 
+        arg0: u.Name.ToLower(), 
+        arg1: u.Surname.ToLower()).Contains(__searchParams_SearchString_0))' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+2020-10-12 13:19:07.7734 ERROR The LINQ expression 'DbSet<User>
+    .Where(u => u.IsActive == (Nullable<bool>)True)
+    .Where(u => string.Format(
+        format: "{0} {1}", 
+        arg0: u.Name.ToLower(), 
+        arg1: u.Surname.ToLower()).Contains(__searchParams_SearchString_0))' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+2020-10-12 13:19:08.0079 ERROR The LINQ expression 'DbSet<User>
+    .Where(u => u.IsActive == (Nullable<bool>)True)
+    .Where(u => string.Format(
+        format: "{0} {1}", 
+        arg0: u.Name.ToLower(), 
+        arg1: u.Surname.ToLower()).Contains(__searchParams_SearchString_0))' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+2020-10-12 13:19:08.2949 ERROR The LINQ expression 'DbSet<User>
+    .Where(u => u.IsActive == (Nullable<bool>)True)
+    .Where(u => string.Format(
+        format: "{0} {1}", 
+        arg0: u.Name.ToLower(), 
+        arg1: u.Surname.ToLower()).Contains(__searchParams_SearchString_0))' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+2020-10-12 13:19:09.5529 ERROR The LINQ expression 'DbSet<User>
+    .Where(u => u.IsActive == (Nullable<bool>)True)
+    .Where(u => string.Format(
+        format: "{0} {1}", 
+        arg0: u.Name.ToLower(), 
+        arg1: u.Surname.ToLower()).Contains(__searchParams_SearchString_0))' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+2020-10-12 13:21:47.2823 ERROR The LINQ expression 'DbSet<User>
+    .Where(u => u.IsActive == (Nullable<bool>)True)
+    .Where(u => string.Concat(
+        str0: u.Name.ToLower(), 
+        str1: " ", 
+        str2: u.Surname.ToLower()).Contains(__searchParams_SearchString_0))' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+2020-10-12 13:21:47.2823 ERROR The LINQ expression 'DbSet<User>
+    .Where(u => u.IsActive == (Nullable<bool>)True)
+    .Where(u => string.Concat(
+        str0: u.Name.ToLower(), 
+        str1: " ", 
+        str2: u.Surname.ToLower()).Contains(__searchParams_SearchString_0))' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+2020-10-12 13:21:47.4895 ERROR The LINQ expression 'DbSet<User>
+    .Where(u => u.IsActive == (Nullable<bool>)True)
+    .Where(u => string.Concat(
+        str0: u.Name.ToLower(), 
+        str1: " ", 
+        str2: u.Surname.ToLower()).Contains(__searchParams_SearchString_0))' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+2020-10-12 13:21:47.6174 ERROR The LINQ expression 'DbSet<User>
+    .Where(u => u.IsActive == (Nullable<bool>)True)
+    .Where(u => string.Concat(
+        str0: u.Name.ToLower(), 
+        str1: " ", 
+        str2: u.Surname.ToLower()).Contains(__searchParams_SearchString_0))' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+2020-10-12 13:21:47.8229 ERROR The LINQ expression 'DbSet<User>
+    .Where(u => u.IsActive == (Nullable<bool>)True)
+    .Where(u => string.Concat(
+        str0: u.Name.ToLower(), 
+        str1: " ", 
+        str2: u.Surname.ToLower()).Contains(__searchParams_SearchString_0))' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+2020-10-12 13:21:48.2008 ERROR The LINQ expression 'DbSet<User>
+    .Where(u => u.IsActive == (Nullable<bool>)True)
+    .Where(u => string.Concat(
+        str0: u.Name.ToLower(), 
+        str1: " ", 
+        str2: u.Surname.ToLower()).Contains(__searchParams_SearchString_0))' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+2020-10-12 13:21:49.6989 ERROR The LINQ expression 'DbSet<User>
+    .Where(u => u.IsActive == (Nullable<bool>)True)
+    .Where(u => string.Concat(
+        str0: u.Name.ToLower(), 
+        str1: " ", 
+        str2: u.Surname.ToLower()).Contains(__searchParams_SearchString_0))' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.

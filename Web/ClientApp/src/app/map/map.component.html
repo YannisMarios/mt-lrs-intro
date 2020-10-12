@@ -1,0 +1,11 @@
+<div class="map-title">
+  <h1>Valleta, Malta</h1>
+</div>
+
+<app-esri-map
+  [center]="mapCenter"
+  [basemap]="basemapType"
+  [zoom]="mapZoomLevel"
+  (mapLoadedEvent)="mapLoadedEvent($event)"
+>
+</app-esri-map>

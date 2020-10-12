@@ -1,0 +1,121 @@
+<mat-card class="user-card" *ngIf="user">
+  <mat-card-header>
+    <div mat-card-avatar class="user-card-header-image"></div>
+    <mat-card-title *ngIf="editMode"
+      >{{ user.name }} {{ user.surname }}</mat-card-title
+    >
+    <mat-card-subtitle *ngIf="editMode">{{
+      user.userType.description
+    }}</mat-card-subtitle>
+    <mat-card-title *ngIf="!editMode">Add New User</mat-card-title>
+  </mat-card-header>
+  <form [formGroup]="form" (submit)="onSubmit()">
+    <mat-card-content>
+      <mat-form-field class="form-field">
+        <mat-label>Select a Title</mat-label>
+        <mat-select formControlName="userTitleId" required>
+          <mat-option *ngFor="let title of userTitles" [value]="title.id">{{
+            title.description
+          }}</mat-option>
+        </mat-select>
+        <mat-error *ngIf="form.get('userTitleId').touched">
+          <span *ngIf="form.get('userTitleId').errors?.required"
+            >Title is required.</span
+          >
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field class="form-field">
+        <mat-label> Name </mat-label>
+        <input matInput id="name" formControlName="name" required />
+        <mat-error *ngIf="form.get('name').touched">
+          <span *ngIf="form.get('name').errors?.required"
+            >Name is required.</span
+          >
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field class="form-field">
+        <mat-label> Surame </mat-label>
+        <input matInput formControlName="surname" required />
+        <mat-error *ngIf="form.get('surname').touched">
+          <span *ngIf="form.get('surname').errors?.required"
+            >Surname is required.</span
+          >
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field class="form-field">
+        <mat-label>Date of Birth</mat-label>
+        <input
+          matInput
+          formControlName="birthDate"
+          [matDatepicker]="picker"
+          [min]="minDate"
+          [max]="maxDate"
+          required
+          readonly
+        />
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+        <mat-error *ngIf="form.get('birthDate').touched">
+          <span *ngIf="form.get('birthDate').errors?.required"
+            >Date of Birth is required.</span
+          >
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field class="form-field">
+        <mat-label>Select a User Type</mat-label>
+        <mat-select formControlName="userTypeId" required>
+          <mat-option *ngFor="let type of userTypes" [value]="type.id">{{
+            type.description
+          }}</mat-option>
+        </mat-select>
+        <mat-error *ngIf="form.get('userTypeId').touched">
+          <span *ngIf="form.get('userTypeId').errors?.required"
+            >User Type is required.</span
+          >
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field class="form-field">
+        <mat-label> E-mail </mat-label>
+        <input matInput formControlName="emailAddress" required />
+        <mat-error
+          *ngIf="
+            form.get('emailAddress').touched && !form.get('emailAddress').valid
+          "
+        >
+          <span *ngIf="form.get('emailAddress').errors?.required"
+            >E-mail is required</span
+          >
+          <span *ngIf="form.get('emailAddress').errors?.email"
+            >E-mail is invalid</span
+          >
+        </mat-error>
+      </mat-form-field>
+      <div class="form-field">
+        <mat-label> Is Active </mat-label>
+        <mat-slide-toggle formControlName="isActive"></mat-slide-toggle>
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button
+        mat-raised-button
+        color="primary"
+        (click)="onBack()"
+        type="button"
+      >
+        <mat-icon>keyboard_backspace</mat-icon> BACK
+      </button>
+      <button mat-raised-button class="success" type="submit">
+        <mat-icon>save</mat-icon> SAVE
+      </button>
+      <button
+        mat-raised-button
+        class="danger"
+        type="button"
+        (click)="openDialog()"
+        *ngIf="editMode"
+      >
+        <mat-icon>delete</mat-icon> DELETE
+      </button>
+    </mat-card-actions>
+  </form>
+</mat-card>

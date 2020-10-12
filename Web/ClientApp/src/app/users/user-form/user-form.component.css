@@ -1,0 +1,28 @@
+.user-card {
+  max-width: 500px;
+}
+
+.user-card-header-image {
+  background-image: url("../../../assets/user-icon.png");
+  background-size: cover;
+}
+
+.form-field {
+  display: block;
+  margin: 0 0 10px 0;
+}
+
+.form-field mat-slide-toggle {
+  margin: 8px 0;
+  display: block;
+}
+
+.success {
+  background-color: green;
+  color: #fff;
+}
+
+.danger {
+  background-color: red;
+  color: #fff;
+}
