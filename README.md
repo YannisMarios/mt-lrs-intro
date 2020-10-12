@@ -12,7 +12,7 @@ Please see https://github.com/angular/angular for minimum requirements.
 3. Open a command-line prompt and cd to MT-LRS-Intro/Web/ClientApp
 4. Run 'npm install' to install all packages needed for the Angular application
 5. Right click on Solution in Solution Explorer, click on "Select Startup Projects"
-   and under "Multiple STartup Projects" set "Start for both Api and Web projects.
+   and under "Multiple Startup Projects" set "Start" for both Api and Web projects.
 6. Start the app in Visual Studio without debugging (Ctrl + F5)
 
 Two tabs will open in your default browser:
