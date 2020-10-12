@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ymari\\source\\repos\\MT-LRS-Intro\\Api\\Api.csproj": {}
+    "c:\\Users\\ymari\\source\\repos\\MT-LRS-Intro\\Api\\Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ymari\\source\\repos\\MT-LRS-Intro\\Api\\Api.csproj": {
+    "c:\\Users\\ymari\\source\\repos\\MT-LRS-Intro\\Api\\Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ymari\\source\\repos\\MT-LRS-Intro\\Api\\Api.csproj",
+        "projectUniqueName": "c:\\Users\\ymari\\source\\repos\\MT-LRS-Intro\\Api\\Api.csproj",
         "projectName": "Api",
-        "projectPath": "C:\\Users\\ymari\\source\\repos\\MT-LRS-Intro\\Api\\Api.csproj",
+        "projectPath": "c:\\Users\\ymari\\source\\repos\\MT-LRS-Intro\\Api\\Api.csproj",
         "packagesPath": "C:\\Users\\ymari\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ymari\\source\\repos\\MT-LRS-Intro\\Api\\obj\\",
+        "outputPath": "c:\\Users\\ymari\\source\\repos\\MT-LRS-Intro\\Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

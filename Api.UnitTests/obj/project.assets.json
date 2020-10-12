@@ -8769,11 +8769,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ymari\\source\\repos\\MT-LRS-Intro\\Api.UnitTests\\Api.UnitTests.csproj",
+      "projectUniqueName": "c:\\Users\\ymari\\source\\repos\\MT-LRS-Intro\\Api.UnitTests\\Api.UnitTests.csproj",
       "projectName": "Api.UnitTests",
-      "projectPath": "C:\\Users\\ymari\\source\\repos\\MT-LRS-Intro\\Api.UnitTests\\Api.UnitTests.csproj",
+      "projectPath": "c:\\Users\\ymari\\source\\repos\\MT-LRS-Intro\\Api.UnitTests\\Api.UnitTests.csproj",
       "packagesPath": "C:\\Users\\ymari\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ymari\\source\\repos\\MT-LRS-Intro\\Api.UnitTests\\obj\\",
+      "outputPath": "c:\\Users\\ymari\\source\\repos\\MT-LRS-Intro\\Api.UnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -8794,8 +8794,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\ymari\\source\\repos\\MT-LRS-Intro\\Api\\Api.csproj": {
-              "projectPath": "C:\\Users\\ymari\\source\\repos\\MT-LRS-Intro\\Api\\Api.csproj"
+            "c:\\Users\\ymari\\source\\repos\\MT-LRS-Intro\\Api\\Api.csproj": {
+              "projectPath": "c:\\Users\\ymari\\source\\repos\\MT-LRS-Intro\\Api\\Api.csproj"
             }
           }
         }
@@ -8857,9 +8857,6 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }

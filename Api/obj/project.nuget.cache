@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6QVZ1H2aW0alkcHFxwGq5yh02i/ZE5Mvu0JUnoC/aJKaV/SLfvrSP9CCpEVqIqlbnDXFOkZfRwLb365QMKewtg==",
+  "dgSpecHash": "JqrandRetOYJ8a/Evs7y79n7bPkRt+7fY0+wiFEq6fTe0qx5XD6YB0aihE0U+hsQTjS2alI+kX/UFWjMNHC12w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ymari\\source\\repos\\MT-LRS-Intro\\Api\\Api.csproj",
+  "projectFilePath": "c:\\Users\\ymari\\source\\repos\\MT-LRS-Intro\\Api\\Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ymari\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
     "C:\\Users\\ymari\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.0.1\\automapper.extensions.microsoft.dependencyinjection.8.0.1.nupkg.sha512",
