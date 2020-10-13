@@ -34,13 +34,13 @@ namespace Api.DTO
         /// <summary>
         /// The user type id
         /// </summary>
-        [Range(1, int.MaxValue, ErrorMessage = "Please enter a value greater than {1}")]
+        [Range(1, int.MaxValue, ErrorMessage = "Please enter a value greater or equal than {1}")]
         public int UserTypeId { get; set; }
 
         /// <summary>
         /// The user title id
         /// </summary>
-        [Range(1, int.MaxValue, ErrorMessage = "Please enter a value greater than {1}")]
+        [Range(1, int.MaxValue, ErrorMessage = "Please enter a value greater or equal than {1}")]
         public int UserTitleId { get; set; }
 
         /// <summary>

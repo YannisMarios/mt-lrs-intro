@@ -1,4 +1,4 @@
-export class UserType {
-  public id: number;
-  public description: string;
+export interface UserType {
+  id: number;
+  description: string;
 }

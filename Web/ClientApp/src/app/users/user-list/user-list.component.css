@@ -9,3 +9,8 @@
 .right {
   text-align: right;
 }
+
+.danger {
+  background-color: red;
+  color: #fff;
+}

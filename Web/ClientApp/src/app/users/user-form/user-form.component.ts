@@ -1,4 +1,4 @@
-import { Component, Inject, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Store } from '@ngrx/store';
@@ -17,7 +17,7 @@ import {
 import { User } from '../user.model';
 import { UserTitle } from 'src/app/user-titles/user-title.model';
 import { UserType } from 'src/app/user-types/user-type.model';
-import { DeleteUserModalComponent } from 'src/app/users/dialog/delete-user-modal.component';
+import { DeleteUserModalComponent } from 'src/app/users/user-delete/user-delete-modal.component';
 import { MatDialog } from '@angular/material/dialog';
 
 @Component({
@@ -79,7 +79,8 @@ export class UserFormComponent implements OnInit {
   }
 
   private initForm() {
-    if (this.editMode) {
+    if (this.editMode && !this.user.id) {
+      console.log('editComponent')
       this.store.dispatch(UserActions.fetchUser({ id: this.id }));
       this.userChangedSubscription = this.store
         .select('userState')
@@ -142,10 +143,13 @@ export class UserFormComponent implements OnInit {
     });
 
     dialogRef.afterClosed().subscribe((result) => {
-      this.store.dispatch(UserActions.deleteUser({ id: this.id }));
+      if(result) {
+        this.store.dispatch(UserActions.deleteUser({ id: this.id }));
+      }
       this.onBack();
     });
   }
+
   constructor(
     private store: Store<fromApp.AppState>,
     private route: ActivatedRoute,

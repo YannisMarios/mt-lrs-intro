@@ -8,8 +8,8 @@ interface DialogData {
 
 @Component({
   selector: 'app-dialog',
-  templateUrl: './delete-user-modal.component.html',
-  styleUrls: ['./delete-user-modal.component.css'],
+  templateUrl: './user-delete-modal.component.html',
+  styleUrls: ['./user-delete-modal.component.css'],
 })
 export class DeleteUserModalComponent implements OnInit {
   constructor(

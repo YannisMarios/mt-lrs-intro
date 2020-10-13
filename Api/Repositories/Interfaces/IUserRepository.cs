@@ -40,6 +40,6 @@ namespace Api.Repositories.Interfaces
         /// </summary>
         /// <param name="id">The id of the user to delete</param>
         /// <returns></returns>
-        Task DeleteUser(int id);
+        Task<User> DeleteUser(int id);
     }
 }

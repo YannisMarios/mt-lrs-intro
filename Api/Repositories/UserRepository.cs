@@ -91,7 +91,7 @@ namespace Api.Repositories
 			return user;
 		}
 
-		public async Task DeleteUser(int id)
+		public async Task<User> DeleteUser(int id)
         {
 			var user = await _context.User.SingleOrDefaultAsync(x => x.Id.Equals(id)).ConfigureAwait(false);
 
@@ -102,6 +102,8 @@ namespace Api.Repositories
 				_context.User.Update(user);
 				await _context.SaveChangesAsync();
 			}
+
+			return user;
 		}
     }
 }

@@ -18,6 +18,8 @@ import { DataTableSource } from 'src/app/shared/data-table/data-table-source';
 import { PageDto } from 'src/app/shared/Dtos/PageDto';
 import * as UserActions from '../../users/store/user.actions';
 import { ActivatedRoute, Router } from '@angular/router';
+import { MatDialog } from '@angular/material/dialog';
+import { DeleteUserModalComponent } from '../user-delete/user-delete-modal.component';
 
 @Component({
   selector: 'app-user-list',
@@ -66,7 +68,6 @@ export class UserListComponent implements AfterViewInit, OnInit, OnDestroy {
       .pipe(
         startWith({}),
         map(() => {
-          console.log();
           this.searchAction(
             this.filterControl.value,
             this.paginator.pageIndex,
@@ -74,7 +75,7 @@ export class UserListComponent implements AfterViewInit, OnInit, OnDestroy {
           );
         })
       )
-      .subscribe();
+      .subscribe(() => console.log('lalala'));
   }
 
   searchAction(searchString = '', pageIndex = 0, pageSize = 5) {
@@ -89,9 +90,26 @@ export class UserListComponent implements AfterViewInit, OnInit, OnDestroy {
     this.router.navigate(['edit'], { relativeTo: this.route });
   }
 
+  onDelete(user: User) {
+    const dialogRef = this.dialog.open(DeleteUserModalComponent, {
+      width: '400px',
+      data: {
+        user,
+      },
+    });
+
+    dialogRef.afterClosed().subscribe((result) => {
+      if(result) {
+        this.store.dispatch(UserActions.deleteUser({ id: user.id }));
+        this.searchAction();
+      }
+    });
+  }
+
   constructor(
     private store: Store<fromApp.AppState>,
     private route: ActivatedRoute,
-    private router: Router
+    private router: Router,
+    public dialog: MatDialog
   ) {}
 }

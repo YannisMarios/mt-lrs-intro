@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Api.DTO;
+using Api.Exceptions;
 using Api.Services.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -61,7 +62,12 @@ namespace Api.Controllers
             catch (ArgumentException ex)
             {
                 _logger.Error(ex.Message);
-                return StatusCode(StatusCodes.Status400BadRequest);
+                return BadRequest(ex.Message);
+            }
+            catch (EntityNotFoundException ex)
+            {
+                _logger.Error(ex.Message);
+                return NotFound(ex.Message);
             }
             catch (Exception ex)
             {
@@ -85,7 +91,7 @@ namespace Api.Controllers
             }
             catch(ArgumentNullException ex) {
                 _logger.Error(ex.Message);
-                return StatusCode(StatusCodes.Status400BadRequest);
+                return BadRequest(ex.Message);
             }
             catch (Exception ex)
             {
@@ -111,12 +117,17 @@ namespace Api.Controllers
             catch (ArgumentException ex)
             {
                 _logger.Error(ex.Message);
-                return StatusCode(StatusCodes.Status400BadRequest);
+                return BadRequest(ex.Message);
+            }
+            catch (EntityNotFoundException ex)
+            {
+                _logger.Error(ex.Message);
+                return NotFound(ex.Message);
             }
             catch (Exception ex)
             {
                 _logger.Error(ex.Message);
-                return StatusCode(StatusCodes.Status400BadRequest);
+                return StatusCode(StatusCodes.Status500InternalServerError);
             }
         }
 
@@ -136,12 +147,17 @@ namespace Api.Controllers
             catch (ArgumentException ex)
             {
                 _logger.Error(ex.Message);
-                return StatusCode(StatusCodes.Status400BadRequest);
+                return BadRequest(ex.Message);
+            }
+            catch (EntityNotFoundException ex)
+            {
+                _logger.Error(ex.Message);
+                return NotFound(ex.Message);
             }
             catch (Exception ex)
             {
                 _logger.Error(ex.Message);
-                return StatusCode(StatusCodes.Status400BadRequest);
+                return StatusCode(StatusCodes.Status500InternalServerError);
             }
         }
     }

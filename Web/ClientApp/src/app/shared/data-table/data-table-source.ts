@@ -1,10 +1,6 @@
 import { DataSource } from '@angular/cdk/table';
-import { MatPaginator } from '@angular/material/paginator';
-import { MatSort } from '@angular/material/sort';
-import { Store } from '@ngrx/store';
 import { Observable, merge, BehaviorSubject } from 'rxjs';
-import { map, switchMap } from 'rxjs/operators';
-import * as fromApp from '../../store/app.reducer';
+import { map } from 'rxjs/operators';
 
 export interface ISearchAction {
   searchString: string;

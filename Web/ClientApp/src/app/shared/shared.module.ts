@@ -7,6 +7,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { NavigationComponent } from './navigation/navigation.component';
+import { ErrorModalComponent } from './error-modal/error-modal.component';
 
 @NgModule({
   imports: [
@@ -26,6 +27,6 @@ import { NavigationComponent } from './navigation/navigation.component';
     MaterialModule,
     FlexLayoutModule,
   ],
-  declarations: [NavigationComponent],
+  declarations: [NavigationComponent, ErrorModalComponent],
 })
 export class SharedModule {}

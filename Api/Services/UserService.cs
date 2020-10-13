@@ -1,4 +1,5 @@
 ﻿using Api.DTO;
+using Api.Exceptions;
 using Api.Models;
 using Api.Repositories.Interfaces;
 using Api.Services.Interfaces;
@@ -30,14 +31,20 @@ namespace Api.Services
             return _mapper.Map<PageDto<UserDto>>(usersPage);
         }
 
-        public async Task<UserDto> GetUser(int userId)
+        public async Task<UserDto> GetUser(int id)
         {
-            if(userId <= 0)
+            if(id <= 0)
             {
-                throw new ArgumentException(nameof(userId));
+                throw new ArgumentException("Invalid user id", nameof(id));
             }
 
-            var user = await _userRepository.GetUser(userId);
+            var user = await _userRepository.GetUser(id);
+
+            if(user == null)
+            {
+                throw new EntityNotFoundException("User not found");
+            }
+
             return _mapper.Map<UserDto>(user);
         }
 
@@ -59,7 +66,7 @@ namespace Api.Services
         {
             if (id == 0 || id < 0)
             {
-                throw new ArgumentException(nameof(id));
+                throw new ArgumentException("Invalid user id", nameof(id));
             }
 
             if (userData == null)
@@ -69,6 +76,11 @@ namespace Api.Services
             var user = _mapper.Map<User>(userData);
             var result = await _userRepository.UpdateUser(id, user);
 
+            if (result == null)
+            {
+                throw new EntityNotFoundException("User not found");
+            }
+
             return _mapper.Map<UserDto>(result);
         }
 
@@ -76,9 +88,14 @@ namespace Api.Services
         {
             if (id == 0 || id < 0)
             {
-                throw new ArgumentException(nameof(id));
+                throw new ArgumentException("Invalid user id", nameof(id));
             }
-            await _userRepository.DeleteUser(id);
+            var result = await _userRepository.DeleteUser(id);
+
+            if (result == null)
+            {
+                throw new EntityNotFoundException("User not found");
+            }
         }
     }
 }
