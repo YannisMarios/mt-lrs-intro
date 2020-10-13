@@ -75,7 +75,7 @@ export class UserListComponent implements AfterViewInit, OnInit, OnDestroy {
           );
         })
       )
-      .subscribe(() => console.log('lalala'));
+      .subscribe();
   }
 
   searchAction(searchString = '', pageIndex = 0, pageSize = 5) {

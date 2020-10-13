@@ -90,13 +90,14 @@ export class UserEffects {
   deleteUsers$ = createEffect(() =>
     this.actions$.pipe(
       ofType(UserActions.deleteUser),
-      switchMap((actionData) => {
+      withLatestFrom(this.store.select('userState')),
+      switchMap(([actionData, userState]) => {
         return this.http.delete(
           `https://localhost:44367/api/users/delete/${actionData.id}`
         )
         .pipe(
           map(() => {
-            return { type: 'DUMMY ' };
+            return UserActions.fetchUsers({searchParamsDTO: { searchString: "", pageIndex: userState.users.currentPage, pageSize: 5 }})
           }),
           catchError((error: HttpErrorResponse) => {
             this.handleError(error)

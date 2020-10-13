@@ -1,10 +1,10 @@
 <mat-card class="user-card" *ngIf="user">
   <mat-card-header>
     <div mat-card-avatar class="user-card-header-image"></div>
-    <mat-card-title *ngIf="editMode"
+    <mat-card-title *ngIf="editMode && user.id"
       >{{ user.name }} {{ user.surname }}</mat-card-title
     >
-    <mat-card-subtitle *ngIf="editMode">{{
+    <mat-card-subtitle *ngIf="editMode && user.id">{{
       user.userType.description
     }}</mat-card-subtitle>
     <mat-card-title *ngIf="!editMode">Add New User</mat-card-title>
